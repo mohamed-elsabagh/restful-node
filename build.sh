@@ -10,8 +10,13 @@ SUPERVISOR_DIRECTORY="/etc/supervisor/conf.d"
 SUPERVISOR_FILE_NAME="restful-node.conf"
 
 function help {
-	echo "Choose one of the following: {publish|clean|run}"
+	echo "Choose one of the following: {publish|clean|run|install}"
 	exit 1
+}
+
+function install {
+	sudo apt-get install supervisor
+	sudo apt-get install nginx
 }
 
 function clean {
@@ -71,6 +76,10 @@ case "$cmd" in
 
 	run)
 		run
+	;;
+
+	install)
+		install
 	;;
 
 	*)
