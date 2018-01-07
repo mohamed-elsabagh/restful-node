@@ -1,5 +1,5 @@
 const port = 5002;
-const databaseHost = '18.216.40.236';
+const databaseHost = 'localhost';
 const databasePort = '27017';
 const kaaDatabaseName = 'demo';
 const kaaAppId = '46446319481347303729';
