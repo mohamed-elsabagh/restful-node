@@ -55,6 +55,9 @@ var LogSchema = new mongoose.Schema({
         },
         temperature: {
             type: Number
+        },
+        lux: {
+            type: Number
         }
     }
 }, {
